@@ -10,7 +10,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := usb
-LOCAL_SRC_FILES := core.c descriptor.c io.c sync.c os/linux_usbfs.c
+LOCAL_SRC_FILES := libusb_jni.c core.c descriptor.c io.c sync.c os/linux_usbfs.c
 
 LOCAL_CFLAGS += -W -Wall
 LOCAL_CFLAGS += -fPIC -DPIC
