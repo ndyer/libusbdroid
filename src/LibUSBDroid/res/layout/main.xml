@@ -12,6 +12,11 @@
     android:layout_height="wrap_content" 
     android:text=""
     />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
 <Button android:id="@+id/btnInit"
     android:layout_marginTop = "20dp"
     android:layout_width="wrap_content" 
@@ -19,6 +24,26 @@
     android:layout_marginLeft = "5dp"
     android:layout_marginRight = "5dp"
     android:text="Initialize" />
+<Button android:id="@+id/btnInit"
+    android:layout_marginTop = "20dp"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft = "5dp"
+    android:layout_marginRight = "5dp"
+    android:text="Detect All" />
+</LinearLayout>
+<EditText android:id="@+id/etLogs"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="false"
+    android:layout_marginTop="10dip"
+    android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+    android:lines="8" 
+    android:minLines="6" 
+    android:gravity="top|left" 
+    android:maxLines="10" 
+    android:scrollbars="vertical" 
+/>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
@@ -46,17 +71,12 @@
     android:text="Detect" 
     />
 </LinearLayout>
-<EditText android:id="@+id/etLogs"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:singleLine="false"
-    android:layout_marginTop="10dip"
-    android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
-    android:lines="8" 
-    android:minLines="6" 
-    android:gravity="top|left" 
-    android:maxLines="10" 
-    android:scrollbars="vertical" 
-/>
+<Button android:id="@+id/btnClear"
+    android:layout_marginTop = "20dp"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft = "5dp"
+    android:layout_marginRight = "5dp"
+    android:text="Clear" />
 </LinearLayout>
 
